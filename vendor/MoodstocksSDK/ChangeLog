@@ -1,0 +1,43 @@
+v3.5
+     * New image signature format (more compact): it is now possible to synchro-
+       -nize up to 1500 images into the on-device cache
+     * Added support for Data Matrix barcodes
+     * Improved performances for network operations (sync, API search)
+     * Unified result structure for image / barcodes with built-in base64url
+       decoding
+     * [iOS] Added a capture session class that handles the video capture
+
+v3.4-r1
+     * [iOS/Android] Added snap / cancel (API search) and pause / resume capabi-
+       -lities to scanner session
+     * [iOS/Android] Added extra delegates support for the synchronization
+     * [Android] Delegated camera management to the wrapper by adding
+       CameraManager.java and AutoFocusManager.java.
+
+v3.4
+     * Added a callback for synchronization progress
+     * Added device software (OS) and hardware (model) information into the logs
+     * [iOS] The C static library is now built with Clang
+     * [iOS] The Obj-C wrapper can now be used within projects with ARC enabled
+     * [iOS] The Obj-C debugging logs are now turned off in release mode
+     * [iOS] Refactored `scan` method under a scanner session class
+     * [Android] Added support for ARMv6 and ARMv7 w/o NEON Android devices
+     * [Android] Refactored `scan` method under a scanner session class
+     * [Android] Added an `isSyncing` method
+     * [Android] Simplified errors: no more `UnsupportedDeviceException`.
+
+v3.3
+     * Add support to detect device compatibility at runtime
+     * Introduce a convenient scan method for Obj-C and Java wrappers that
+       combines simultaneous offline image recognition and barcode decoding
+
+v3.2
+     * Be less restrictive over the image size constraint
+       Please refer to `ms_img_new` documentation
+
+v3.1
+     * First release of Android build
+     * [iOS] No more dependencies on ImageIO and Accelerate frameworks
+
+v3.0
+     * Initial release, iOS build only
