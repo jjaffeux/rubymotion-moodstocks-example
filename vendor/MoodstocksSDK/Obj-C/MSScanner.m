@@ -334,8 +334,4 @@ static NSString *kMSAPISecret  = @"";
 }
 #endif
 
-<<<<<<< HEAD
 @end
-=======
-@end
->>>>>>> 5aef5e2e5f33ecee447e86b70eb58cbdb624c701
